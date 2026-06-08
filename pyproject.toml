@@ -10,7 +10,10 @@ dev = [
     "pytest>=8.4.0",
     "pytest-playwright>=0.7.0",
     "pytest-asyncio>=1.0.0",
-    "allure-pytest>=2.14.3",
     "python-dotenv>=1.1.0",
     "faker>=37.3.0",
+    "pytest-html>=4.1.0",
 ]
+
+[tool.pytest.ini_options]
+addopts = "--html=reports/report.html --self-contained-html"
