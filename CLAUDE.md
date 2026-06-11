@@ -19,10 +19,13 @@ DemoHRMPlaywrightDemo/
 └── pyproject.toml        # Project metadata and dependencies
 ```
 ## Writing tests from Claude agent prompt
-Test case request should contain:
-- Test case name (create test function based on it)
-- Test case description (create the docstring for the test function)
-- Test case steps (should be in Gherkin format). 1 step per line. Test code will be generated according the steps and based on the instructions deccribed here for Web UI and REST API test writing guides below.
+
+Use the `/generate-test` skill (`.claude/skills/generate-test.md`) to generate tests.
+
+Provide:
+- **Test case name** — becomes the `test_` function name
+- **Test case description** — becomes the docstring
+- **Test case steps** — in Gherkin format (`Given / When / Then / And`), one per line
 
 ## Writing Web UI tests
 

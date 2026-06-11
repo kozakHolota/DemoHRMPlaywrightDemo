@@ -13,6 +13,7 @@ dev = [
     "python-dotenv>=1.1.0",
     "faker>=37.3.0",
     "pytest-html>=4.1.0",
+    "bs4",
 ]
 
 [tool.pytest.ini_options]
